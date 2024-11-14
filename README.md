@@ -147,12 +147,6 @@ export LIBGL_ALWAYS_SOFTWARE=1
 export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0
 ```
 
-If you have custom tools in your environment, also add this:
-
-```bash
-export PATH="$HOME/os/toolchain/x86_64/bin:$PATH"
-```
-
 To start the GNOME session, run:
 
 ```bash
